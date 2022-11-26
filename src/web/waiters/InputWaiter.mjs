@@ -1059,6 +1059,10 @@ class InputWaiter {
         const tabsList = document.getElementById("input-tabs");
         const tabsListChildren = tabsList.children;
 
+        this.setUrl({
+            includeInput: false
+        });
+
         tabsList.classList.remove("tabs-left");
         tabsList.classList.remove("tabs-right");
         for (let i = tabsListChildren.length - 1; i >= 0; i--) {
